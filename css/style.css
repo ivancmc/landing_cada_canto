@@ -1,0 +1,17 @@
+html{
+  background-color: #000;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img#logo{
+  width: 120px;
+}
+
+h3#title{
+  color: white;
+}
