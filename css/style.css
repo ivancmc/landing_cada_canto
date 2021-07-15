@@ -12,6 +12,20 @@ img#logo{
   width: 120px;
 }
 
-h3#title{
+span#title{
   color: white;
+  font-family: 'Zen Tokyo Zoo', cursive;
+  font-size: 64px;
+}
+
+#section-one{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: yellow;
+  height: 50vh;
+}
+
+#section-one img{
+  height: 40vh;
 }
