@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 html{
   background-color: #000;
 }
@@ -6,26 +11,120 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 30px 0;
 }
 
 img#logo{
-  width: 120px;
+  max-width: 60px;
+  height: auto;
 }
 
-span#title{
-  color: white;
-  font-family: 'Zen Tokyo Zoo', cursive;
-  font-size: 64px;
+img#nomeLoja{
+  max-width: 300px;
+  height: auto;
 }
 
-#section-one{
+#section-promo{
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: yellow;
-  height: 50vh;
+  width: 100%;
+  height: 300px;
+  padding: 30px 0;
 }
 
-#section-one img{
-  height: 40vh;
+#section-promo img{
+  height: auto;
+  width: 350px;
+  margin-bottom: -25px;
 }
+
+.glow {
+  font-size: 65px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #000, 0 0 20px rgb(255, 251, 15), 0 0 30px #e60000, 0 0 40px #e60000, 0 0 50px #e60000, 0 0 60px #e60000, 0 0 70px #e60000;
+  }
+  
+  to {
+    text-shadow: 0 0 20px rgb(255, 251, 0), 0 0 30px #ff4d4d, 0 0 40px #ff4d4d, 0 0 50px #ff4d4d, 0 0 60px #ff4d4d, 0 0 70px #ff4d4d, 0 0 80px #ff4d4d;
+  }
+}
+
+#section-products{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 8px 16px 0 rgba(255, 0, 0, 0.2);
+  border: 9px double rgb(255, 255, 255);
+  border-radius: 32px;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #e5131e;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+#section-form{
+  height: 200px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  background-image: url('../assets/bg3.png');
+}
+
+#section-form form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 130px;
+}
+
+#section-form form input[type=text], #section-form form input[type=email]{
+  height: 40px;
+  width: 300px;
+  border-radius: 10px;
+  font-size: 20px;
+ }

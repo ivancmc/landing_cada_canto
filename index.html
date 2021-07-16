@@ -1,24 +1,82 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>BF Cada Canto</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">  
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Merienda&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
   </head>
+
   <body>
+
     <header>
       <img id="logo" src="assets/logo.png" />
-      <span id="title">CADA CANTO</span>
+      <img id="nomeLoja" src="assets/nome_loja.png" />
     </header>
-    <section id="section-one">
-      <img id="desconto" src="assets/50off.png" />
-      <p>Para os primeiros 50 cadastrados!</p>
+
+    <section id="section-promo">
+      <img class="promo" src="assets/50off.png" />
+      <span class="glow">Para os primeiros 50 cadastrados!</span>
     </section>
+
+    <section id="section-products">
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/jets.jpg" alt="Jets" style="width:300px;height:300px;border-radius: 20px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Jets J1</h1> 
+            <p>DE: <span>R$ 3.000,00</span></p> 
+            <p>POR: <span>R$ 1.500,00</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/xiaomi.png" alt="Jets" style="width:300px;height:300px;border-radius: 20px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Xiaomi</h1> 
+            <p>DE: <span>R$ 3.000,00</span></p> 
+            <p>POR: <span>R$ 1.500,00</span></p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/samsung.jpg" alt="Jets" style="width:300px;height:300px;border-radius: 20px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Samsung</h1> 
+            <p>DE: <span>R$ 3.000,00</span></p> 
+            <p>POR: <span>R$ 1.500,00</span></p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="section-form">
+      <form action="#">
+        <input type="text" name="formName" id="inputName" placeholder="Nome" />
+        <input type="email" name="formEmail" id="inputEmail" placeholder="E-mail" />
+        <input type="submit" value="Quero desconto!">
+      </form>
+    </section>
+
   </body>
+
   <script src="js/script.js"></script>
+
 </html>
