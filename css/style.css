@@ -31,8 +31,7 @@ img#nomeLoja{
   flex-direction: column;
   align-items: center;
   background-color: yellow;
-  width: 100%;
-  height: 300px;
+  height: auto;
   padding: 30px 0;
 }
 
@@ -105,6 +104,12 @@ img#nomeLoja{
 .flip-card-front {
   background-color: #bbb;
   color: black;
+}
+
+.flip-card-front img{
+  width: 300px;
+  height:300px; 
+  border-radius: 20px;
 }
 
 .flip-card-back {
@@ -241,4 +246,47 @@ footer{
   color: white;
   text-align: center;
   margin-top: 30px;
+}
+
+@media only screen and (max-width: 1000px) {
+  #section-products {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .glow{
+    font-size: 50px;
+  }
+
+  #section-promo img {
+    width: 240px;
+  }
+
+  img#nomeLoja {
+    max-width: 250px;
+  }
+
+  .flip-card {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 45px;
+  }
+
+  .flip-card-front img{
+    width: 250px;
+    height: 250px; 
+  }
+
+  span.price-to {
+    font-size: 35px;
+  }
+
+  #section-form {
+    margin-top: 20px;
+  }
+
+  #section-form form input[type=text], #section-form form input[type=email] {
+    width: 250px;
+  }
 }
